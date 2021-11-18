@@ -3,23 +3,9 @@
 #define PI 3.14159265359
 
 
-float volumeesfera(float r){
+float volumeesfera(float);
 
-    float volume;
-
-    volume = (PI * 4 * (r*r*r))/3;
-
-return volume;
-}
-
-float circunferenciaesfera (float r){
-
-    float circunferencia;
-
-    circunferencia = PI * (r + r);
-
-return circunferencia;
-}
+float circunferenciaesfera (float);
 
 int main(){
     float raio;
@@ -36,4 +22,14 @@ int main(){
     printf("\nA circunferencia da esfera e igual a %.2f", circunferencia);
 
 return 0;
+}
+
+float volumeesfera(float r){
+
+    return (PI * 4 * (r*r*r))/3;
+}
+
+float circunferenciaesfera (float r){
+
+    return PI * (r + r);
 }
